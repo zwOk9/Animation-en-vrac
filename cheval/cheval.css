@@ -1,0 +1,36 @@
+body{
+    margin:0;
+    padding:0;
+	background-color:black;
+}
+#container{
+    position:relative;
+    width:100%;
+    height:128px;
+    margin:auto;
+    margin-top:10px;
+    
+}
+#smurf{
+    position:absolute;
+    width:200px;
+    height:128px;
+    overflow:hidden;
+    animation:bouger 6s infinite linear;
+}
+#cheval{
+    position:absolute;
+    animation:bougeCheval 1.5s steps(11) infinite;
+}
+@keyframes bougeCheval{
+    from{left:0px}
+    to{left:-2200px;}
+	
+	
+}
+@keyframes bouger{
+    0%{left:0px;transform:scaleX(1);}
+    49.9%{left:700px;transform:scaleX(1);}
+    50%{left:700px;transform:scaleX(-1);}
+    100%{left:0px;transform:scaleX(-1);}
+}
